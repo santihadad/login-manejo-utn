@@ -22,17 +22,17 @@ entrar_aula_manejo = driver.find_element_by_link_text("2021-5D1-1-547 2021-5D1(1
 entrar_aula_manejo.click()
 
 driver.implicitly_wait(10)
-asistencia = driver.find_element_by_link_text("Asistencia")
-asistencia.click()
+entrar_asistencia = driver.find_element_by_link_text("Asistencia")
+entrar_asistencia.click()
 
 #Colocar presente
 driver.implicitly_wait(10)
-enviar_asistencia = driver.find_element_by_link_text("Enviar asistencia")
-enviar_asistencia.click()
+colocar_asistencia = driver.find_element_by_link_text("Enviar asistencia")
+colocar_asistencia.click()
 
 #Radio Button
-presente = driver.find_element_by_xpath("//*[@id='id_status_17749']")
-presente.click()
+colocar_presente = driver.find_element_by_xpath("//*[@id='id_status_17749']")
+colocar_presente.click()
 
 #Guardar cambios y cerrar todo
 guardar_cambios = driver.find_element_by_xpath("//*[@id='id_submitbutton']")
